@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  tensorflow:
+    image: tensorflow/tensorflow:latest-gpu_vgg
+    container_name: gpu_victus
+    build:
+      context: . 
+      dockerfile: ./Dockerfile

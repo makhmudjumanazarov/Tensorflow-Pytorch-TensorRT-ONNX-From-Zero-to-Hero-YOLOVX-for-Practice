@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  tensorflow:
+    image: tensorflow/tensorflow:latest-gpu_vgg
+    container_name: gpu_victus
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+#version: 'latest
+
+#services:
+ # tensorflow:
+ # image: tensorflow/tensorflow:latest-gpu
+ # ports:
+  #  - 8888:8888
+  #volumes:
+  #  - ./notebooks:/notebooks
